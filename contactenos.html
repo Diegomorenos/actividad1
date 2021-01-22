@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>ACTIVIDAD 1</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/Menu.css'>
+        <!--<script src='main.js'></script>-->
+    </head>
+    <body>
+        <nav id="menu">
+            <ul class="menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="./img/legion.png">
+                    </a>
+                </li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+                <!--menu desplegable-->
+                <li>
+                    <a href="#">Usuario</a>
+                    <ul>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Cuenta</a></li>
+                        <li><a href="#">Configuración</a></li>    
+                    </ul>
+                </li>
+                <!--fin menu desplegable-->
+            </ul>
+        </nav>
+        <div class="contenedor">
+            <h1>SHINGEKI NO KYOJIN</h1>
+            <h2>Titanes Cambiantes</h2>
+            <div>
+                <form >
+                    <div class="sectionflex">
+                        <div class="elementoflex">
+                            <div class="label">
+                                <label for="tipo"> Tipo de Mensaje </label>
+                            </div>
+                            <select id="tipo" name="tipo" required>
+                                <option value=""> Seleccione una Opción</option>
+                                <option value="cotizacion"> Cotización</option>
+                                <option value="saludo">Saludo</option>
+                                <option value="queja">Queja</option>
+                            </select>
+                        </div>
+                        <div class="elementoflex">
+                            <div class="label">
+                            <label for="nombre">Nombres</label>
+                            </div>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                        </div>
+                        <div class="elementoflex">
+                            <div class="label">
+                            <label for="email">E-mail</label>
+                            </div>
+                            <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                        </div>
+                        <div class="elementoflex">
+                            <div class="label">
+                            <label for="celular">Celular</label>
+                            </div>
+                            <input type="text" id="celular" name="celular" placeholder="Ingrese su Celular" required>
+                        </div>
+                        <div class="elementoflex">
+                            <div class="label">
+                            <label for="comentario">Comentario</label>
+                            </div>
+                            <textarea id="comentario" name="comentario" placeholder="Ingrese su Comentario" required></textarea>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="check1" required> Leí Terminos y Condiciones <br>
+                            <input type="checkbox" id="check2" required> Acepto Terminos y Condiciones <br>  
+                        </div>
+                        <div class="check">
+                            <label>Continuar</label><br>
+                            <input type="radio" name="radio" id="check3"> SI <br>
+                            <input type="radio" name="radio" id="check4"> NO <br>  
+                        </div>
+                        <div class="boton-div">
+                            <button type="submit">Enviar Datos</button>
+                        
+                    </div>
+                </form>
+            </div>    
+        </div>
+        <footer>
+            <p><b>Creado por: </b>Diego Moreno</p>
+        </footer>
+    </body>
+</html>
