@@ -35,13 +35,13 @@
             <h1>SHINGEKI NO KYOJIN</h1>
             <h2>Titanes Cambiantes</h2>
             <div>
-                <form >
+                <form method="post">
                     <div class="sectionflex">
                         <div class="elementoflex">
                             <div class="label">
                                 <label for="tipo"> Tipo de Mensaje </label>
                             </div>
-                            <select id="tipo" name="tipo" required>
+                            <select id="tipo" name="tipo" >
                                 <option value=""> Seleccione una Opción</option>
                                 <option value="cotizacion"> Cotización</option>
                                 <option value="saludo">Saludo</option>
@@ -52,25 +52,25 @@
                             <div class="label">
                             <label for="nombre">Nombres</label>
                             </div>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" >
                         </div>
                         <div class="elementoflex">
                             <div class="label">
                             <label for="email">E-mail</label>
                             </div>
-                            <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                            <input type="text" id="email" name="email" placeholder="example@correo.com" >
                         </div>
                         <div class="elementoflex">
                             <div class="label">
                             <label for="celular">Celular</label>
                             </div>
-                            <input type="text" id="celular" name="celular" placeholder="Ingrese su Celular" required>
+                            <input type="text" id="celular" name="celular" placeholder="Ingrese su Celular" >
                         </div>
                         <div class="elementoflex">
                             <div class="label">
                             <label for="comentario">Comentario</label>
                             </div>
-                            <textarea id="comentario" name="comentario" placeholder="Ingrese su Comentario" required></textarea>
+                            <textarea id="comentario" name="comentario" placeholder="Ingrese su Comentario" ></textarea>
                         </div>
                         <div class="check">
                             <input type="checkbox" id="check1" required> Leí Terminos y Condiciones <br>
@@ -82,7 +82,7 @@
                             <input type="radio" name="radio" id="check4"> NO <br>  
                         </div>
                         <div class="boton-div">
-                            <button type="submit">Enviar Datos</button>
+                            <button type="submit" onclick="validacioncampos()">Enviar Datos</button>
                         
                     </div>
                 </form>
@@ -91,5 +91,8 @@
         <footer>
             <p><b>Creado por: </b>Diego Moreno</p>
         </footer>
+
+        <script src="./js/java.js"></script>
+
     </body>
 </html>
